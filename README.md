@@ -1,31 +1,61 @@
 # ☁️ CloudForge
 
-CloudForge is a full-stack cloud file upload platform built with Node.js, Express, React, and AWS S3.
+CloudForge is a full-stack cloud file upload system built with **Node.js, Express, React, JWT authentication, and AWS S3**.  
+It allows users to securely register, login, and upload files to cloud storage.
 
 ---
 
-## 🚀 Features
+## 🚀 Live Features
 
-- User Login & Register
-- JWT Authentication
-- File upload to AWS S3
-- Secure backend API
+- 🔐 User Registration & Login (JWT Auth)
+- ☁️ Secure AWS S3 File Upload
+- 📦 Protected API Routes
+- ⚡ React Frontend UI
+- 🛡️ Password Hashing (bcrypt)
+- 🔑 Token-based Authentication
 
 ---
 
 ## 🏗️ Tech Stack
 
+### Frontend
 - React
+- JavaScript
+
+### Backend
 - Node.js
-- Express
-- AWS S3
+- Express.js
+- JWT (Authentication)
+- bcryptjs
+- Multer
+
+### Cloud
+- Amazon S3 (AWS)
 
 ---
 
-## ⚙️ How it works
+## 📸 Project Preview
 
-1. User logs in
-2. User selects file
-3. File is sent to backend
-4. Backend uploads to AWS S3
-5. Returns file link
+### Login Page
+![Login](./screenshots/login.png)
+
+### Upload Page
+![Upload](./screenshots/upload.png)
+
+### Success Upload
+![Success](./screenshots/success.png)
+
+---
+
+## ⚙️ How It Works
+
+1. User registers or logs in
+2. Server generates JWT token
+3. User selects a file
+4. File is sent to backend
+5. Backend uploads file to AWS S3
+6. Returns public file URL
+
+---
+
+## 📂 Project Structure
